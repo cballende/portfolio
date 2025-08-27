@@ -1,0 +1,50 @@
+
+/*
+	var  avatar
+*/
+
+body{
+	max-width:1600px
+}
+
+nav{	
+	z-index:3;
+	width:300px;
+}
+
+header{	
+	display:block;	
+}
+body,h1,h2,h3,h4,h5,h6 {
+	font-family: "Raleway", sans-serif
+}
+
+img.avatar{
+	width:45%;
+}
+
+img{
+	width:100%;
+}
+
+li>img{
+	width:50px;
+}
+
+.main {
+	margin-left:300px;
+	transition: margin-left .4s;
+}
+
+.overlay {
+	"cursor:pointer;
+}
+
+.avatar {
+	width:65px;
+}
+
+
+
+
+

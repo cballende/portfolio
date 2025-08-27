@@ -1,0 +1,29 @@
+/*
+	data.json
+*/
+
+{
+	"subjets":[{},],
+	"proyects":[
+		{"past":[{}]
+		},
+		{	"actualy":[{
+
+						}]
+		},
+		{	"next":[{
+
+						}]
+		},
+	],
+	
+	"abaut":[
+		{}
+	],
+	"skills":[
+		{}
+	],
+	"proyects":[
+		{}
+	],
+}
