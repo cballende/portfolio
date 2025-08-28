@@ -3,6 +3,8 @@
 	var  avatar
 */
 
+
+
 body{
 	max-width:1600px
 }
@@ -19,13 +21,17 @@ body,h1,h2,h3,h4,h5,h6 {
 	font-family: "Raleway", sans-serif
 }
 
-img.avatar{
-	width:45%;
-}
-
 img{
 	width:100%;
 }
+
+img.avatar{
+	width:45%;
+}
+img.profile{
+	width:65px;
+}
+
 
 li>img{
 	width:50px;
@@ -44,6 +50,16 @@ li>img{
 	width:65px;
 }
 
+.sidebar {
+	height: 100%;
+	/*width: 200px;*/
+	background-color: #fff;
+	position: fixed !important;
+	z-index: 1;
+	overflow: auto;
+}
+
+
 /* MQ */
 @media (min-width: 993px) {
 	.sidebar.collapse {
@@ -53,4 +69,3 @@ li>img{
 		margin-left:300px;
 	}
 }
-
