@@ -61,11 +61,19 @@ li>img{
 
 
 /* MQ */
-@media (min-width: 993px) {
+@media (min-width: 993px) { /*lg*/
 	.sidebar.collapse {
 	display: block !important;
 	}
 	.main{
 		margin-left:300px;
 	}
+}
+
+.hover:hover {
+	color: #009688 !important;
+}
+
+.hide {
+	display: none;
 }

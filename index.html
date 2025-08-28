@@ -17,20 +17,20 @@
 
 <!-- Sidebar/menu -->
 <nav class="sidebar collapse"  id="menuSidebar"><br>
-  <div class="">
-    <a href="#" onclick="()" class="" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="assets/images/avatars/box.jpeg" class="avatar rounded"><br><br>
+  <div class="container mb-3">
+    <div class="d-flex justify-content-between mb-4">
+      <img src="assets/images/avatars/box.jpeg" class="avatar rounded"><br><br>
+      <a href="#" class="d-lg-none" title="close menu"><i class="fa fa-remove"></i></a>
+    </div>
     <h4><b>PORTFOLIO</b></h4>    
   </div>
-  <div class="-block">
-    <a href="#portfolio" onclick="()" class="-item   -teal"><i class="fa fa-th-large fa-fw -right"></i>PORTFOLIO</a> 
-    <a href="#about" onclick="()" class="-item  "><i class="fa fa-user fa-fw -right"></i>ABOUT</a> 
-    <a href="#contact" onclick="()" class="-item  "><i class="fa fa-envelope fa-fw -right"></i>CONTACT</a>
+  <div class="list-group">
+    <a href="#portfolio" class="btn list-group-item-action"><i class="fa fa-th-large fa-fw me-3"></i>PORTFOLIO</a> 
+    <a href="#about"     class="btn list-group-item-action"><i class="fa fa-user fa-fw me-3"></i>ABOUT</a> 
+    <a href="#contact"   class="btn list-group-item-action "><i class="fa fa-envelope fa-fw me-3"></i>CONTACT</a>
   </div>
-  <div class=" ">
-    <i class="fa fa-facebook-official -opacity"></i>    
+  <div class="container ms-1 mt-3">
+    <i class="fa fa-facebook-official hover"></i>    
   </div>
 </nav>
 
@@ -43,8 +43,10 @@
 
   <!-- Header -->
   <header id="portfolio">
-    <a href="#"><img src="assets/images/avatars/box.jpeg" class="profile rounded-circle"></a>
-    <span class=" -large  -text-grey" onclick="()"><i class="fa fa-bars"></i></span>
+    <div class="d-flex justify-content-between d-lg-none">
+      <a href="" class="btn m-4 "> <span class="display-5 "><i class="fa fa-bars"></i></span> </a>
+      <a href="#" class=""><img src="assets/images/avatars/box.jpeg" class="profile rounded-circle m-4 "></a>
+    </div>
     <div class="">
       <h1><b>My Portfolio</b></h1>
       <div class="">
@@ -57,36 +59,14 @@
   </header>
   
   <!-- BEGIN Photo Grid-->
-  <div class="row p-3">
-    <div class="col-xl-4 col-md-6 col-12   mb-6">
-      <img src="assets/images/products/proyects/fal.png" alt="Proyect"  class="-opacity ">
+  <div class="row p-3" id="projects-list">
+    <div class="col-xl-4 col-md-6 col-12 mb-6 hide">
+      <img src="assets/images/products/proyects/" alt="Proyect"  class="images">
       <div class=" ">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p class="title"><b></b></p>
+        <p class="description">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
       </div>
-    </div>
-    <div class="col-xl-4 col-md-6 col-12  mb-6">
-      <img src="assets/images/products/proyects/fal.png" alt="Proyect"  class="-opacity ">
-      <div class=" ">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="col-xl-4 col-md-6 col-12  mb-6">
-      <img src="assets/images/products/proyects/fal.png" alt="Proyect"  class="-opacity ">
-      <div class=" ">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <!-- Second Photo Grid-->
-    <div class="col-xl-4 col-md-6 col-12  mb-6">
-      <img src="assets/images/products/proyects/fal.png" alt="Proyect"  class="-opacity ">
-      <div class=" ">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
+    </div> 
   </div>
      
 
@@ -101,7 +81,7 @@
   </div>
 
   <!-- ON WORKING -->
-  <div class="" id="about">
+  <div class="" id="working">
     <hr>
     <h4>I'm Working</h4>
      <div class="row p-3">
@@ -121,20 +101,40 @@
     </div>
   </div>
 
-  <div class="" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+  <div class="" id="next">
+    <hr>
+    <h4>I'm Working</h4>
+     <div class="row p-3">
+    <div class="col-md-6 col-12   mb-6">
+      <img src="assets/images/products/working/boliguayo.jpeg" alt="Proyect"  class="-opacity ">
+      <div class=" ">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="col-md-6 col-12  mb-6">
+      <img src="assets/images/products/working/boliguayo.jpeg" alt="Proyect"  class="-opacity ">
+      <div class=" ">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-5">
+
+    <!-- About -->
+    <h4><b>About Me</b></h4>    
+    <div class="container" id="about"></div>
     <hr>
     
+    <!-- Skills -->
     <h4>Technical Skills</h4>
-    <!-- Progress bars / Skills -->
-    <p>Photography</p>
-    <div class="">
-      <span class="">Travel</span> <span class="">New York</span>
-    </div>
+
+    <div class="container" id="skill-list"></div>
     
     <p>
-      <button class="">
+      <button class="hide">
         <i class="fa fa-download "></i>Download Resume
       </button>
     </p>
