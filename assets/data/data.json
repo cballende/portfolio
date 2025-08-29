@@ -1,6 +1,6 @@
 {
 	"subjets":[{"title":"Electronics","icon":""},{"title":"WEB","icon":""},{"title":"CAD","icon":""}],
-	"proyects":[
+	"proyects":
 		{	"past":[
 				 {
 				 	"id": 1,
@@ -26,9 +26,23 @@
 				    "description": "Descripción del proyecto 4.",
 				    "img":"fal.png"
 				 }
-				]
-		},
-		{	"actualy":[
+				],
+		
+		"actualy":[
+									{
+									 	"id": 1,
+									    "title": "Proyecto 1",
+									    "description": "Descripción del proyecto 1.",
+									    "img":"boliguayo.jpeg"
+									 },
+									 {
+									 	"id": 2,
+									    "title": "Proyecto 2",
+									    "description": "Descripción del proyecto 2.",
+									    "img":"boliguayo.jpeg"
+									 }
+								],
+		"next":[
 						{
 						 	"id": 1,
 						    "title": "Proyecto 1",
@@ -40,25 +54,9 @@
 						    "title": "Proyecto 2",
 						    "description": "Descripción del proyecto 2.",
 						    "img":"boliguayo.jpeg"
-						 },
-						]
-		},
-		{	"next":[
-						{
-						 	"id": 1,
-						    "title": "Proyecto 1",
-						    "description": "Descripción del proyecto 1.",
-						    "img":"boliguayo.jpeg"
-						 },
-						 {
-						 	"id": 2,
-						    "title": "Proyecto 2",
-						    "description": "Descripción del proyecto 2.",
-						    "img":"boliguayo.jpeg"
-						 },
+						 }
 					]
 		},
-	],
 	
 	"about":[
 		{"text":"Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."}
@@ -66,11 +64,11 @@
 	"skills":[
 											{"type":"Electronics","list":["FPGA","MCU","C++","PLC","siemmes","scheneider","Mitsubishi"]},
 											{"type":"CAD","list":["KiCad","FreeCad"]},
-											{"type":"WEB","list":["Laravel","CakePhP","SlimPhP","MySQL","js","TS","JQuery","Docker"]},
+											{"type":"WEB","list":["Laravel","CakePhP","SlimPhP","MySQL","js","TS","JQuery","Docker"]}
 		],
 	"contact":[
 											{"type":"Electronics","list":["FPGA","MCU","C++","PLC","siemmes","scheneider","Mitsubishi"]},
 											{"type":"CAD","list":["KiCad","FreeCad"]},
-											{"type":"WEB","list":["Laravel","CakePhP","SlimPhP","MySQL","js","TS","JQuery","Docker"]},
-		],
+											{"type":"WEB","list":["Laravel","CakePhP","SlimPhP","MySQL","js","TS","JQuery","Docker"]}
+		]
 }

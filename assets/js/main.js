@@ -1,5 +1,5 @@
 
-const API_URL_DATA = 'assest/data/';
+const API_URL_DATA = 'assets/data/';
 
 // Script to open and close sidebar
 function navWideOpen() {
@@ -17,11 +17,10 @@ async function getDataAsync() {
     const response = await fetch(API_URL_DATA+'data.json');
     const data = await response.json();
     console.log(data);
+    return data;
   } catch (error) {
     console.error('Error fetching data:', error);
   }
-
-  return data;
 }
 
 /*PROYECTS*/
@@ -29,17 +28,17 @@ function renderProjects(projects) {
   const projectList = document.getElementById('projects-list');
   projectList.innerHTML = '';
   let HTML="";
-  projects.forEach(project => {    
+  projects.past.forEach(project => {
     HTML+= createProjectCard(project);    
   });
   projectList.innerHTML=HTML;
 }
 
 function createProjectCard(project) {
-
+console.log(project.img);
   return `
     <div class="col-xl-4 col-md-6 col-12   mb-6">
-      <img src="assets/images/products/proyects/"${project.img} alt="Proyect"  class="images ">
+      <img src="assets/images/products/proyects/${project.img}" alt="Proyect"  class="images ">
       <div class="">
         <p><b>${project.title}</b></p>
         <p>${project.description}</p>
@@ -57,9 +56,9 @@ function render(content) {
 /*ABOUT*/
 
 function renderAbout(about) {
-  const about = document.getElementById('about');
-  about.innerHTML = '';
-  about.innerHTML = createAbout(project);
+  const aboutN = document.getElementById('about');
+  aboutN.innerHTML = '';
+  aboutN.innerHTML = createAbout(project);
 }
 
 function createAbout(about) {
@@ -96,11 +95,15 @@ function createSkill(skill) {
 }
 
 
-document.ready{
-    let data=getDataAsync();
-    renderProjects(data.proyects);
-    renderAbout(data.about);
-    renderSkills(data.skills);
-}
+document.addEventListener("DOMContentLoaded", (event) => {
+    let data= getDataAsync();
+    //getDataAsync();
+    data.then((res)=>{
+      //console.log(res);
+    renderProjects(res.proyects);
+    //renderAbout(data.about);
+    //renderSkills(data.skills);*/
+    });
+});
 
 
