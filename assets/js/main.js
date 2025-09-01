@@ -16,28 +16,75 @@ async function getDataAsync() {
   try {
     const response = await fetch(API_URL_DATA+'data.json');
     const data = await response.json();
-    console.log(data);
+    //console.log(data);
     return data;
   } catch (error) {
     console.error('Error fetching data:', error);
   }
 }
 
+/*SUBJETS*/
+
+function renderSubjets(data) {
+  const node = document.getElementById('subjet-list');
+  let HTML = '';
+  data.forEach(datum => {
+    HTML += createSubjet(datum);
+  });
+  node.innerHTML+= HTML;
+}
+function createSubjet(data) {
+  return `
+    <button class=" "><i class="${data.icon} me-1"></i>${data.title}</button>
+  `;
+}
+
 /*PROYECTS*/
 function renderProjects(projects) {
-  const projectList = document.getElementById('projects-list');
-  projectList.innerHTML = '';
+  let projectL;
   let HTML="";
-  projects.past.forEach(project => {
-    HTML+= createProjectCard(project);    
-  });
-  projectList.innerHTML=HTML;
+
+  if (projects.hasOwnProperty("past")) {
+      projects.past.forEach( item => {
+        projectL = document.getElementById(`past-list`);
+        projectL.innerHTML = '';
+        HTML="";
+        projects.past.forEach(project => {
+          HTML+= createProjectCard(project);
+        });
+        projectL.innerHTML=HTML;
+      }
+    );    
+  }  
+  if (projects.hasOwnProperty("actualy")) {
+    projects.past.forEach( item => {
+        projectL = document.getElementById(`actualy-list`);
+        projectL.innerHTML = '';
+        HTML="";
+        projects.past.forEach(project => {
+          HTML+= createProjectCard(project);    
+        });
+        projectL.innerHTML=HTML;
+      }
+    );    
+  }  
+  if (projects.hasOwnProperty("next")) {
+    projects.past.forEach( item => {
+      projectL = document.getElementById(`next-list`);
+      projectL.innerHTML = '';
+      HTML="";
+      projects.past.forEach(project => {
+        HTML+= createProjectCard(project);    
+      });
+      projectL.innerHTML=HTML;
+    }
+    );    
+  }  
 }
 
 function createProjectCard(project) {
-console.log(project.img);
   return `
-    <div class="col-xl-4 col-md-6 col-12   mb-6">
+    <div class="col-xl-4 col-md-6 col-12   mb-4">
       <img src="assets/images/products/proyects/${project.img}" alt="Proyect"  class="images ">
       <div class="">
         <p><b>${project.title}</b></p>
@@ -47,62 +94,128 @@ console.log(project.img);
   `;
 }
 
-function render(content) {
-  const element = document.createElement('div');
-  element.innerHTML = content;
-  document.body.appendChild(element);
-}
 
 /*ABOUT*/
 
 function renderAbout(about) {
   const aboutN = document.getElementById('about');
   aboutN.innerHTML = '';
-  aboutN.innerHTML = createAbout(project);
+  aboutN.innerHTML = createAbout(about);
 }
 
 function createAbout(about) {
-
-  return `    
-    <p>${about.text}</p>
-    <hr>
-  `;
+  return `<p>${about.text}</p><hr>`;
 }
 
 /*SKILLS*/
 
-function renderSkills(skills) {
-  const skillList = document.getElementById('skill-list');
-  skillList.innerHTML = '';
+function renderSkills(data) {
+  
+  const node = document.getElementById('skill-list');
+  node.innerHTML = '';
   let HTML = '';
-  skills.forEach(skills => {
-    HTML += createSkillCard(skills);
+  data.forEach(datum => {
+    HTML += createSkill(datum);
   });
+  node.innerHTML = HTML;
 }
 
-
-function createSkill(skill) {
+function createSkill(data) {
   let HTML="";
-  skills.list.forEach(item => {
-    HTML += `<span class="">${item}</span>`;
+  data.list.forEach(item => {
+    HTML += `<span class="tag">${item}</span>`;
   });
-  return `    
-    <p>${skill.type}</p>
-    <div class="">
+  return `
+    <h6>${data.type}</h6>
+    <div class="mb-3">
         ${HTML}
     </div>
   `;
 }
 
 
+/*CONTACT*/
+
+function renderContact(data) {
+  const email = document.getElementById('contactEmail');
+  const locate = document.getElementById('contactLoc');
+  const phone = document.getElementById('contactPhone');
+  if (data.hasOwnProperty("email"))
+    email.innerHTML = data.email;
+  if (data.hasOwnProperty("locate")) 
+    locate.innerHTML = data.locate;
+  if (data.hasOwnProperty("phone"))  
+    phone.innerHTML = data.phone;  
+}
+
+
+/*PARTNERS*/
+
+function renderPartners(data) {
+  console.log(data);
+  const part = document.getElementById('partner-list');
+  part.innerHTML = '';
+  let HTML = '';
+  data.forEach(datum => {
+    HTML += createPartner(datum);
+  });
+  part.innerHTML = HTML;
+}
+
+function createPartner(data) {
+  let HTML="";
+  return `
+    <li class="-16 nodeco">
+      <img src="${data.img}" class=" -right" >
+      <span class=""><a class="nodeco" href="https://${data.link}" target="_blank">${data.name}</a></span><br>
+      <p>${data.description}.</p>
+    </li>
+  `;
+}
+
+
+/*POSTS*/
+
+function renderPost(data) {
+  const post = document.getElementById('post-list');
+  post.innerHTML = '';
+  let HTML = '';
+  data.forEach(datum => {
+    HTML += createPost(datum);
+  });
+  post.innerHTML = HTML;
+}
+
+function createPost(data) {
+   let HTML="";
+  return `
+    <li class="-16 nodeco">
+      <img src="${data.img}" class=" -right" >
+      <span class=""><a class="nodeco" href="https://${data.link}" target="_blank">${data.name}</a></span><br>
+      <span>${data.description}.</span>
+    </li>
+  `;
+}
+
 document.addEventListener("DOMContentLoaded", (event) => {
     let data= getDataAsync();
     //getDataAsync();
     data.then((res)=>{
-      //console.log(res);
-    renderProjects(res.proyects);
-    //renderAbout(data.about);
-    //renderSkills(data.skills);*/
+      //console.log(res.proyects);
+      if(res.hasOwnProperty("subjets"))
+        renderSubjets(res.subjets);
+      if(res.hasOwnProperty("proyects"))
+        renderProjects(res.proyects);
+      if(res.hasOwnProperty("about"))
+        renderAbout(res.about);
+      if(res.hasOwnProperty("skills"))
+        renderSkills(res.skills);
+      if(res.hasOwnProperty("contact"))
+        renderContact(res.contact);
+      if(res.hasOwnProperty("partners"))
+        renderPartners(res.partners);
+      if(res.hasOwnProperty("posts"))
+        renderPost(res.posts);
     });
 });
 

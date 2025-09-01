@@ -1,5 +1,8 @@
 {
-	"subjets":[{"title":"Electronics","icon":""},{"title":"WEB","icon":""},{"title":"CAD","icon":""}],
+	"subjets":[{"title":"Electronics","icon":"fa-solid fa-microchip"},
+						 {"title":"WEB","icon":"fa-solid fa-gem"},
+						 {"title":"CAD","icon":"fa-solid fa-robot"}
+						],
 	"proyects":
 		{	"past":[
 				 {
@@ -58,17 +61,26 @@
 					]
 		},
 	
-	"about":[
+	"about":
 		{"text":"Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."}
-	],
+	,
 	"skills":[
-											{"type":"Electronics","list":["FPGA","MCU","C++","PLC","siemmes","scheneider","Mitsubishi"]},
-											{"type":"CAD","list":["KiCad","FreeCad"]},
-											{"type":"WEB","list":["Laravel","CakePhP","SlimPhP","MySQL","js","TS","JQuery","Docker"]}
+						{"type":"Electronics","list":["FPGA","MCU","C++","PLC","siemmes","scheneider","Mitsubishi"]},
+						{"type":"CAD","list":["KiCad","FreeCad"]},
+						{"type":"WEB","list":["Laravel","CakePhP","SlimPhP","MySQL","js","TS","JQuery","Docker"]}
 		],
-	"contact":[
-											{"type":"Electronics","list":["FPGA","MCU","C++","PLC","siemmes","scheneider","Mitsubishi"]},
-											{"type":"CAD","list":["KiCad","FreeCad"]},
-											{"type":"WEB","list":["Laravel","CakePhP","SlimPhP","MySQL","js","TS","JQuery","Docker"]}
+	"contact":{
+						"email":"cba.allende@gmail.com",
+						"locate":"Ayacucho, Bs As.",
+						"phone":"(+59) 2494-15-543931"
+						},
+	"partners":[
+							{"name":"InnovarGroup-MDP","type":"collaboration","link":"","img":"","description":""},
+							{"name":"EmbedSA","type":"partner","link":"","img":"","description":""},
+							{"name":"EgoSytem","type":"partner","link":"","img":"","description":""}
+		],
+	"posts":[
+					{"name":"Conforming Window FFT","type":"blog","link":"","img":"","description":""},
+					{"name":"Electronic Gas-Mixer Improver","type":"paper","link":"","img":"","description":""}
 		]
 }
