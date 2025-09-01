@@ -13,14 +13,14 @@
 
 <link rel="stylesheet" href="assets/css/style.css">
 
-<body class="" >
+<body class="container bg-light" >
 
 <!-- Sidebar/menu -->
 <nav class="sidebar collapse"  id="menuSidebar"><br>
-  <div class="container mb-3">
+  <div class="container mb-3 ">
     <div class="d-flex justify-content-between mb-4">
       <img src="assets/images/avatars/box.jpeg" class="avatar rounded"><br><br>
-      <a href="#" class="d-lg-none" title="close menu"><i class="fa fa-remove"></i></a>
+      <a  class="d-lg-none hover pointer" id="close-nav" title="close menu"><i class="fa fa-remove"></i></a>
     </div>
     <h4><b>PORTFOLIO</b></h4>    
   </div>
@@ -29,13 +29,13 @@
     <a href="#about"     class="btn list-group-item-action"><i class="fa fa-user fa-fw me-3"></i>ABOUT</a> 
     <a href="#contact"   class="btn list-group-item-action "><i class="fa fa-envelope fa-fw me-3"></i>CONTACT</a>
   </div>
-  <div class="container ms-1 mt-3">
-    <i class="fa fa-facebook-official hover"></i>    
+  <div class="container ms-1 mt-3" id="social-list">
+    
   </div>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class=" " onclick="()" title="close side menu" id="myOverlay">  
+<div class="overlay opacity" title="close side menu" id="main-overlay">
 </div>
 
 <!-- !PAGE CONTENT! -->
@@ -44,7 +44,7 @@
   <!-- Header -->
   <header id="portfolio">
     <div class="d-flex justify-content-between d-lg-none">
-      <a href="" class="btn m-4 "> <span class="display-5 "><i class="fa fa-bars"></i></span> </a>
+      <a href="#" class="btn m-4 " id="open-nav"> <span class="display-5 "><i class="fa fa-bars"></i></span> </a>
       <a href="#" class=""><img src="assets/images/avatars/box.jpeg" class="profile rounded-circle m-4 "></a>
     </div>
     <div class="">
@@ -122,16 +122,15 @@
     <h4 id="contact"><b>Contact Me</b></h4>
     <div class="row text-center" style="margin:0 -16px">
       <div class="col-md-4 col-12 ">
-        <p><i class="fa fa-envelope" ></i> <span id="contactEmail"></span> </p>
-        <p></p>
+        <p><i class="fa fa-envelope" ></i></p> 
+        <p id="contactEmail"></p>
       </div>
       <div class="col-md-4 col-12">
-        <p><i class="fa fa-map-marker"></i><span id="contactLoc"></span></p>
-        <p></p>
+        <p><i class="fa fa-map-marker"></i></p>
+        <p id="contactLoc"></p>
       </div>
       <div class="col-md-4 col-12">
-        <p><i class="fa fa-phone  -light-grey"></i><span id="contactPhone"></span></p>
-        <p></p>
+        <p><i class="fa fa-phone  -light-grey"></i></p> <p id="contactPhone"></p>        
       </div>
     </div>
     <hr class="">
@@ -153,26 +152,27 @@
   </div>
 
   <!-- Footer -->
-  <footer class="containerMain">
-    <div class="-padding">
-      <div class="">
-        <h3>PARTNERS AND COLLABORATIONS</h3>
-        <ul class=" " id="partner-list">
-          
-        </ul>  
-      </div>
+  <footer class="container containerMain">
+    <div class="row">
     
-      <div class="">
-        <h3>POSTS</h3>
-        <ul class=" " id="post-list">
+      <div class="col-md-6 col-12">
+        <h3>BLOG POSTS</h3>
+        <ul class="postList " id="post-list">
           
         </ul>
       </div>    
 
+      <div class="col-md-6 col-12">
+        <h3>PARTNERS AND COLLABORATIONS</h3>
+        <ul class="postList " id="partner-list">
+          
+        </ul>  
+      </div>
+
     </div>
   </footer>
 
-  <div class=""> <a href="https://www." title="" target="_blank" class="-opacity"></a></div>
+  <div class="bg-dark text-center p-5"> <a href="" title="" target="_blank" class=""></a></div>
 
     
 <!-- End page content -->

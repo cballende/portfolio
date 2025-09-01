@@ -1,16 +1,21 @@
 
 const API_URL_DATA = 'assets/data/';
+const API_URL_IMG = 'assets/images/';
 
-// Script to open and close sidebar
+/* Script to open and close sidebar */
 function navWideOpen() {
     document.getElementById("menuSidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
+    document.getElementById("main-overlay").style.display = "block";
 }
  
 function navWideClose() {
     document.getElementById("menuSidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
+    document.getElementById("main-overlay").style.display = "none";
 }
+
+
+
+/*  ASYNC  */
 
 async function getDataAsync() {
   try {
@@ -22,6 +27,11 @@ async function getDataAsync() {
     console.error('Error fetching data:', error);
   }
 }
+
+
+/***************************************************
+        RENDERING FROM SERVER DATA
+****************************************************/
 
 /*SUBJETS*/
 
@@ -84,9 +94,9 @@ function renderProjects(projects) {
 
 function createProjectCard(project) {
   return `
-    <div class="col-xl-4 col-md-6 col-12   mb-4">
+    <div class="col-xl-4 col-md-6 col-12 mb-4">
       <img src="assets/images/products/proyects/${project.img}" alt="Proyect"  class="images ">
-      <div class="">
+      <div class="container bg-clear  pb-1">
         <p><b>${project.title}</b></p>
         <p>${project.description}</p>
       </div>
@@ -166,7 +176,7 @@ function createPartner(data) {
   let HTML="";
   return `
     <li class="-16 nodeco">
-      <img src="${data.img}" class=" -right" >
+      <img src="${API_URL_IMG+"posts/"+data.img}" class=" -right" >
       <span class=""><a class="nodeco" href="https://${data.link}" target="_blank">${data.name}</a></span><br>
       <p>${data.description}.</p>
     </li>
@@ -187,13 +197,30 @@ function renderPost(data) {
 }
 
 function createPost(data) {
-   let HTML="";
   return `
     <li class="-16 nodeco">
-      <img src="${data.img}" class=" -right" >
+      <img src="${API_URL_IMG+"posts/"+data.img}" class=" -right" >
       <span class=""><a class="nodeco" href="https://${data.link}" target="_blank">${data.name}</a></span><br>
       <span>${data.description}.</span>
     </li>
+  `;
+}
+
+/*SOCIAL*/
+
+function renderSocials(data) {
+  const node = document.getElementById('social-list');
+  node.innerHTML = '';
+  let HTML = '';
+  data.forEach(datum => {
+    HTML += createSocial(datum);
+  });
+  node.innerHTML = HTML;
+}
+
+function createSocial(data) {
+  return `
+    <a class="nodeco" href="https://${data.link}" target="_blank"><i class="${data.icon} hover"></i></a>    
   `;
 }
 
@@ -202,6 +229,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     //getDataAsync();
     data.then((res)=>{
       //console.log(res.proyects);
+      if(res.hasOwnProperty("socials"))
+        renderSocials(res.socials);
       if(res.hasOwnProperty("subjets"))
         renderSubjets(res.subjets);
       if(res.hasOwnProperty("proyects"))
@@ -217,6 +246,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
       if(res.hasOwnProperty("posts"))
         renderPost(res.posts);
     });
+
+    document.getElementById("close-nav").addEventListener(
+      "click", navWideClose
+    );
+    document.getElementById("open-nav").addEventListener(
+      "click", navWideOpen
+    );
+    document.getElementById("main-overlay").addEventListener(
+      "click", navWideClose
+    );
 });
 
 

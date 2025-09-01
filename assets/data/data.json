@@ -1,7 +1,8 @@
 {
 	"subjets":[{"title":"Electronics","icon":"fa-solid fa-microchip"},
 						 {"title":"WEB","icon":"fa-solid fa-gem"},
-						 {"title":"CAD","icon":"fa-solid fa-robot"}
+						 {"title":"CAD","icon":"fa-brands fa-steam-symbol"},
+						 {"title":"Automations","icon":"fa-solid fa-robot"}
 						],
 	"proyects":
 		{	"past":[
@@ -74,9 +75,17 @@
 						"locate":"Ayacucho, Bs As.",
 						"phone":"(+59) 2494-15-543931"
 						},
+	"socials":[
+						 {"title":"github","icon":"fa-brands fa-github","link":""},
+						 {"title":"linkedin","icon":"fa-brands fa-linkedin","link":""},
+						 {"title":"slack","icon":"fa-brands fa-slack","link":""},
+						 {"title":"discord","icon":"fa-brands fa-discord","link":""},
+						 {"title":"pinterest","icon":"fa-brands fa-pinterest","link":""},
+						 {"title":"facebook","icon":"fa-brands fa-facebook","link":""}
+						],					
 	"partners":[
-							{"name":"InnovarGroup-MDP","type":"collaboration","link":"","img":"","description":""},
-							{"name":"EmbedSA","type":"partner","link":"","img":"","description":""},
+							{"name":"InnovarGroup-MDP","type":"collaboration","link":"https://www.innovar-groupmdq.com.ar","img":"igm.png","description":""},
+							{"name":"EmbedSA","type":"partner","link":"","img":"embedsa.jpg","description":""},
 							{"name":"EgoSytem","type":"partner","link":"","img":"","description":""}
 		],
 	"posts":[
@@ -84,3 +93,5 @@
 					{"name":"Electronic Gas-Mixer Improver","type":"paper","link":"","img":"","description":""}
 		]
 }
+
+
