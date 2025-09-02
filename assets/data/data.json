@@ -7,57 +7,151 @@
 	"proyects":
 		{	"past":[
 				 {
-				 	"id": 1,
-				    "title": "Proyecto 1",
-				    "description": "Descripción del proyecto 1.",
-				    "img":"fal.png"
+				 		"id": 1,
+				 		"type":1,
+				    "title": "CIAA-Z3MoT",
+				    "description": "Adaptación de CIAA-Z3R0 hacia un enfoque de MoTe.169MHz +20DBm.",
+				    "img":"ciaa-z3mot-perspec.png"
 				 },
 				 {
-				 	"id": 2,
-				    "title": "Proyecto 2",
-				    "description": "Descripción del proyecto 2.",
-				    "img":"fal.png"
+				 		"id": 2,
+				 		"type":1,
+				    "title": "PIC-WEB-CAPE",
+				    "description": " This project template for KICAD EDA is the basis of an expansion board CAPE for the OLIMEX PIC-WEB.",
+				    "img":"3d_brd.png"
 				 },
 				 {
 				 	"id": 3,
-				    "title": "Proyecto 3",
-				    "description": "Descripción del proyecto 3.",
-				    "img":"fal.png"
+				 		"type":1,
+				    "title": "Dispensador Gel",
+				    "description": "Dispensador gel automatico combinado con temperatura. Arduino",
+				    "img":"dispenser.jpg"
 				 },
 				 {
 				 	"id": 4,
-				    "title": "Proyecto 4",
-				    "description": "Descripción del proyecto 4.",
-				    "img":"fal.png"
+				 		"type":1,
+				    "title": "CbAMoT",
+				    "description": "Plataforma propietaria que brinda servicios de monitoréo en equipos electrónicos remotos para ambientes suburbanos, rural e industrias de espacios abiertos.",
+				    "img":"cbamoteV09a.png"
+				 },
+				 {
+				 	"id": 5,
+				 		"type":1,
+				    "title": "Reflow Controller",
+				    "description": "Platform Reflow Controller and case based on MICROCHIP PIC18f2550 or simil.",
+				    "img":"Real_simu.jpg"
+				 },
+				 {
+				 	"id": 6,
+				 		"type":2,
+				    "title": "Box liquid meter",
+				    "description": "Box for Itron water meter",
+				    "img":"tapa.jpg"
+				 },
+				 {
+				 	"id": 7,
+				 		"type":2,
+				    "title": "Box for reflow hot plate welding",
+				    "description": "Box for Platform Reflow Controller.",
+				    "img":"oven_plate.jpeg"
+				 },
+				 {
+				 	"id": 8,
+				 		"type":3,
+				    "title": "MIMIA API",
+				    "description": "API MVC for MIMIA network devices on PHP 8 and MariaDB",
+				    "img":"login.png"
+				 },
+				 {
+				 	"id": 9,
+				 		"type":3,
+				    "title": "MIMIA APP",
+				    "description": "MVC Platform for manage MIMIA network devices. Buid in CakePHP 5 and MariaDB",
+				    "img":"portaMimia.jpg"
+				 },
+				 {
+				 	"id": 10,
+				 		"type":3,
+				    "title": "MIMIA PLATFORM",
+				    "description": "Platform network for IoT",
+				    "img":"soluciones_monitoreo.png"
+				 },
+				 {
+				 	"id": 11,
+				 		"type":3,
+				    "title": "Gorrassi",
+				    "description": "E-commers over update PhP Library",
+				    "img":"gorrassi.png"
+				 },
+				 {
+				 	"id": 12,
+				 		"type":3,
+				    "title": "CIUFY",
+				    "description": "Platform Management system for foreign citizen. PhP Library based",
+				    "img":"seal.svg"
+				 },
+				 {
+				 	"id": 13,
+				 		"type":3,
+				    "title": "Gestion Mdq",
+				    "description": "Management system for foreign citizen. PhP Library based",
+				    "img":"MDQ.png"
+				 },
+				 {
+				 	"id": 14,
+				 		"type":3,
+				    "title": "Carimatti",
+				    "description": "Accountants system for schools empleories. PhP Library based",
+				    "img":"carimatti.png"
+				 },
+				 {
+				 	"id": 15,
+				 		"type":3,
+				    "title": "LiberSex",
+				    "description": "System for publish love advertise. PhP Library based",
+				    "img":"logo.png"
+				 },{
+				 		"id": 16,
+				 		"type":3,
+				    "title": "WhatSex",
+				    "description": "System for publish Escort advertises. PhP Library based",
+				    "img":"whatappEscort.png"
 				 }
+
 				],
 		
 		"actualy":[
 									{
 									 	"id": 1,
-									    "title": "Proyecto 1",
-									    "description": "Descripción del proyecto 1.",
-									    "img":"boliguayo.jpeg"
+									    "title": "G2P",
+									    "description": "App for rent and publish garage to park",
+									    "img":"bienvenida.jpeg"
 									 },
 									 {
 									 	"id": 2,
-									    "title": "Proyecto 2",
-									    "description": "Descripción del proyecto 2.",
-									    "img":"boliguayo.jpeg"
+									    "title": "Mimia Docker",
+									    "description": "Mimia platform Docker intances",
+									    "img":"Marco_MIMIA_GCP.png"
 									 }
 								],
 		"next":[
 						{
-						 	"id": 1,
-						    "title": "Proyecto 1",
-						    "description": "Descripción del proyecto 1.",
-						    "img":"boliguayo.jpeg"
+						 	"id": 100,
+						    "title": "Electricity billing system",
+						    "description": "Migrate de actual system to PhP 8",
+						    "img":"Cooperativa.png"
 						 },
 						 {
-						 	"id": 2,
-						    "title": "Proyecto 2",
-						    "description": "Descripción del proyecto 2.",
-						    "img":"boliguayo.jpeg"
+						 	"id": 101,
+						    "title": "Grains level",
+						    "description": "Mimia device for grain silos",
+						    "img":"mimiasdevice.jpg"
+						 },
+						 {
+						 	"id": 102,
+						    "title": "Pools level",
+						    "description": "Mimia device for pools level",
+						    "img":"cistern.jpeg"
 						 }
 					]
 		},
@@ -77,6 +171,7 @@
 						},
 	"socials":[
 						 {"title":"github","icon":"fa-brands fa-github","link":""},
+						 {"title":"hackaday","icon":"fa-solid fa-skull-crossbones","link":"https://hackaday.io/projects/hacker/466225"},
 						 {"title":"linkedin","icon":"fa-brands fa-linkedin","link":""},
 						 {"title":"slack","icon":"fa-brands fa-slack","link":""},
 						 {"title":"discord","icon":"fa-brands fa-discord","link":""},

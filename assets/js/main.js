@@ -1,6 +1,9 @@
 
 const API_URL_DATA = 'assets/data/';
 const API_URL_IMG = 'assets/images/';
+const API_URL_IMG_P = 'past/';
+const API_URL_IMG_A = 'working/';
+const API_URL_IMG_N = 'next/';
 
 /* Script to open and close sidebar */
 function navWideOpen() {
@@ -55,50 +58,47 @@ function renderProjects(projects) {
   let HTML="";
 
   if (projects.hasOwnProperty("past")) {
-      projects.past.forEach( item => {
-        projectL = document.getElementById(`past-list`);
-        projectL.innerHTML = '';
-        HTML="";
-        projects.past.forEach(project => {
-          HTML+= createProjectCard(project);
-        });
-        projectL.innerHTML=HTML;
-      }
-    );    
-  }  
-  if (projects.hasOwnProperty("actualy")) {
-    projects.past.forEach( item => {
-        projectL = document.getElementById(`actualy-list`);
-        projectL.innerHTML = '';
-        HTML="";
-        projects.past.forEach(project => {
-          HTML+= createProjectCard(project);    
-        });
-        projectL.innerHTML=HTML;
-      }
-    );    
-  }  
-  if (projects.hasOwnProperty("next")) {
-    projects.past.forEach( item => {
-      projectL = document.getElementById(`next-list`);
+      projectL = document.getElementById(`past-list`);
       projectL.innerHTML = '';
       HTML="";
-      projects.past.forEach(project => {
-        HTML+= createProjectCard(project);    
-      });
+      projects.past.forEach( item => {
+          item.path=API_URL_IMG_P;
+          HTML+= createProjectCard(item);
+        });
+      projectL.innerHTML=HTML;              
+  }
+  if (projects.hasOwnProperty("actualy")) {
+    projectL = document.getElementById(`actualy-list`);
+    projectL.innerHTML = '';
+      HTML="";
+      projects.actualy.forEach( item => {
+          item.path=API_URL_IMG_A;
+
+          HTML+= createProjectCard(item);
+        });
       projectL.innerHTML=HTML;
-    }
-    );    
-  }  
+  }
+  if (projects.hasOwnProperty("next")) {
+    projectL = document.getElementById(`next-list`);
+    projectL.innerHTML = '';
+      HTML="";
+      projects.next.forEach( item => {
+          item.path=API_URL_IMG_N;
+
+          HTML+= createProjectCard(item);
+        });
+      projectL.innerHTML=HTML;
+  }
 }
 
-function createProjectCard(project) {
+function createProjectCard(data) {
+  console.log(data);
   return `
     <div class="col-xl-4 col-md-6 col-12 mb-4">
-      <img src="assets/images/products/proyects/${project.img}" alt="Proyect"  class="images ">
+      <img src="assets/images/products/proyects/${data.path+data.img}" alt="Proyect"  class="images ">
       <div class="container bg-clear  pb-1">
-        <p><b>${project.title}</b></p>
-        <p>${project.description}</p>
+        <p><b>${data.title}</b></p>
+        <p>${data.description}</p>
       </div>
     </div>
   `;
