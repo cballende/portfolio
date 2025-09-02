@@ -131,3 +131,7 @@ li>img{
 	color: #000 !important;
 	background-color: #fff !important;
 }
+/* Fonts Styles */
+.italic{
+	font-style: italic;
+}

@@ -31,14 +31,14 @@
 				 	"id": 4,
 				 		"type":1,
 				    "title": "CbAMoT",
-				    "description": "Plataforma propietaria que brinda servicios de monitoréo en equipos electrónicos remotos para ambientes suburbanos, rural e industrias de espacios abiertos.",
+				    "description": "Plataforma que brinda servicios de monitoréo en equipos electrónicos remotos en ambientes abiertos. API de sensores construida en <strong><cite>'Programación Basada en Objetos'</cite></strong>. Lenguaje 'C'.",
 				    "img":"cbamoteV09a.png"
 				 },
 				 {
 				 	"id": 5,
 				 		"type":1,
 				    "title": "Reflow Controller",
-				    "description": "Platform Reflow Controller and case based on MICROCHIP PIC18f2550 or simil.",
+				    "description": "Platform Reflow Controller based OBP programming on MICROCHIP PIC18f2550 or simil.",
 				    "img":"Real_simu.jpg"
 				 },
 				 {
@@ -66,7 +66,7 @@
 				 	"id": 9,
 				 		"type":3,
 				    "title": "MIMIA APP",
-				    "description": "MVC Platform for manage MIMIA network devices. Buid in CakePHP 5 and MariaDB",
+				    "description": "MVC Platform for manage MIMIA network devices. Buided over CakePHP 5 and MariaDB",
 				    "img":"portaMimia.jpg"
 				 },
 				 {
@@ -122,13 +122,15 @@
 		
 		"actualy":[
 									{
-									 	"id": 1,
+									 			"id": 201,
+				 								"type":3,
 									    "title": "G2P",
 									    "description": "App for rent and publish garage to park",
 									    "img":"bienvenida.jpeg"
 									 },
 									 {
-									 	"id": 2,
+									 			"id": 202,
+				 								"type":3,
 									    "title": "Mimia Docker",
 									    "description": "Mimia platform Docker intances",
 									    "img":"Marco_MIMIA_GCP.png"
@@ -136,22 +138,37 @@
 								],
 		"next":[
 						{
-						 	"id": 100,
+						 			"id": 100,
+				 					"type":3,
 						    "title": "Electricity billing system",
 						    "description": "Migrate de actual system to PhP 8",
 						    "img":"Cooperativa.png"
 						 },
 						 {
 						 	"id": 101,
+				 					"type":1,
 						    "title": "Grains level",
 						    "description": "Mimia device for grain silos",
 						    "img":"mimiasdevice.jpg"
 						 },
 						 {
 						 	"id": 102,
+				 					"type":1,
 						    "title": "Pools level",
 						    "description": "Mimia device for pools level",
 						    "img":"cistern.jpeg"
+						 },{
+							 	"id": 103,
+				 					"type":3,
+						    "title": "AgroWeb",
+						    "description": "App for farm agro services",
+						    "img":"Farming-as-a-Service.jpg"
+						 },{
+							 	"id": 103,
+				 					"type":4,
+						    "title": "Turbo generator",
+						    "description": "Generator to feed electrolisis cell. Exergy reductor system",
+						    "img":"turbocompresor.jpg"
 						 }
 					]
 		},
