@@ -1,29 +1,215 @@
-/*
-	data.json
-*/
-
 {
-	"subjets":[{},],
-	"proyects":[
-		{"past":[{}]
-		},
-		{	"actualy":[{
+	"subjets":[{"title":"Electronics","icon":"fa-solid fa-microchip"},
+						 {"title":"WEB","icon":"fa-solid fa-gem"},
+						 {"title":"CAD","icon":"fa-brands fa-steam-symbol"},
+						 {"title":"Automations","icon":"fa-solid fa-robot"}
+						],
+	"proyects":
+		{	"past":[
+				 {
+				 		"id": 1,
+				 		"type":1,
+				    "title": "CIAA-Z3MoT",
+				    "description": "Adaptación de CIAA-Z3R0 hacia un enfoque de MoTe.169MHz +20DBm.",
+				    "img":"ciaa-z3mot-perspec.png"
+				 },
+				 {
+				 		"id": 2,
+				 		"type":1,
+				    "title": "PIC-WEB-CAPE",
+				    "description": " This project template for KICAD EDA is the basis of an expansion board CAPE for the OLIMEX PIC-WEB.",
+				    "img":"3d_brd.png"
+				 },
+				 {
+				 	"id": 3,
+				 		"type":1,
+				    "title": "Dispensador Gel",
+				    "description": "Dispensador gel automatico combinado con temperatura. Arduino.",
+				    "img":"dispenser.jpg"
+				 },
+				 {
+				 	"id": 4,
+				 		"type":1,
+				    "title": "CbAMoT",
+				    "description": "Plataforma que brinda servicios de monitoréo en equipos electrónicos remotos en ambientes abiertos. API de sensores construida en <strong><cite>'Programación Basada en Objetos'</cite></strong>. Lenguaje 'C'.",
+				    "img":"cbamoteV09a.png"
+				 },
+				 {
+				 	"id": 5,
+				 		"type":1,
+				    "title": "Reflow Controller",
+				    "description": "Platform Reflow Controller based OBP programming on MICROCHIP PIC18f2550 or simil.",
+				    "img":"Real_simu.jpg"
+				 },
+				 {
+				 	"id": 6,
+				 		"type":2,
+				    "title": "Box liquid meter",
+				    "description": "Box for Itron water meter",
+				    "img":"tapa.jpg"
+				 },
+				 {
+				 	"id": 7,
+				 		"type":2,
+				    "title": "Box for reflow hot plate welding",
+				    "description": "Box for Platform Reflow Controller.",
+				    "img":"oven_plate.jpeg"
+				 },
+				 {
+				 	"id": 8,
+				 		"type":3,
+				    "title": "MIMIA API",
+				    "description": "API MVC for MIMIA network devices on PHP 8 and MariaDB",
+				    "img":"login.png"
+				 },
+				 {
+				 	"id": 9,
+				 		"type":3,
+				    "title": "MIMIA APP",
+				    "description": "MVC Platform for manage MIMIA network devices. Buided over CakePHP 5 and MariaDB",
+				    "img":"portaMimia.jpg"
+				 },
+				 {
+				 	"id": 10,
+				 		"type":3,
+				    "title": "MIMIA PLATFORM",
+				    "description": "Platform network for IoT",
+				    "img":"soluciones_monitoreo.png"
+				 },
+				 {
+				 	"id": 11,
+				 		"type":3,
+				    "title": "Gorrassi",
+				    "description": "E-commers over update PhP Library",
+				    "img":"gorrassi.png"
+				 },
+				 {
+				 	"id": 12,
+				 		"type":3,
+				    "title": "CIUFY",
+				    "description": "Platform Management system for foreign citizen. PhP Library based",
+				    "img":"seal.svg"
+				 },
+				 {
+				 	"id": 13,
+				 		"type":3,
+				    "title": "Gestion Mdq",
+				    "description": "Management system for foreign citizen. PhP Library based",
+				    "img":"MDQ.png"
+				 },
+				 {
+				 	"id": 14,
+				 		"type":3,
+				    "title": "Carimatti",
+				    "description": "Accountants system for schools empleories. PhP Library based",
+				    "img":"carimatti.png"
+				 },
+				 {
+				 	"id": 15,
+				 		"type":3,
+				    "title": "LiberSex",
+				    "description": "System for publish love advertise. PhP Library based",
+				    "img":"logo.png"
+				 },{
+				 		"id": 16,
+				 		"type":3,
+				    "title": "WhatSex",
+				    "description": "System for publish Escort advertises. PhP Library based",
+				    "img":"whatappEscort.png"
+				 }
 
-						}]
+				],
+		
+		"actualy":[
+									{
+									 			"id": 201,
+				 								"type":3,
+									    "title": "G2P",
+									    "description": "App for rent and publish garage to park",
+									    "img":"bienvenida.jpeg"
+									 },
+									 {
+									 			"id": 202,
+				 								"type":3,
+									    "title": "Mimia Docker",
+									    "description": "Mimia platform Docker intances",
+									    "img":"Marco_MIMIA_GCP.png"
+									 }
+								],
+		"next":[
+						{
+						 			"id": 100,
+				 					"type":3,
+						    "title": "Electricity billing system",
+						    "description": "Migrate de actual system to PhP 8",
+						    "img":"Cooperativa.png"
+						 },
+						 {
+						 	"id": 101,
+				 					"type":1,
+						    "title": "Grains level",
+						    "description": "Mimia device for grain silos",
+						    "img":"mimiasdevice.jpg"
+						 },
+						 {
+						 	"id": 102,
+				 					"type":1,
+						    "title": "Pools level",
+						    "description": "Mimia device for pools level",
+						    "img":"cistern.jpeg"
+						 },{
+							 	"id": 103,
+				 					"type":3,
+						    "title": "AgroWeb",
+						    "description": "App for farm agro services",
+						    "img":"Farming-as-a-Service.jpg"
+						 },{
+							 	"id": 104,
+				 					"type":4,
+						    "title": "Turbo generator",
+						    "description": "Generator to feed electrolysis cell. <strong>Exergy</strong> reductor system.",
+						    "img":"turbocompresor.jpg"
+						 },{
+							 	"id": 105,
+				 					"type":1,
+						    "title": "Driver for electrolysis cell",
+						    "description": "Nonlinear controller for a strong filter plant.",
+						    "img":"images.png"
+						 }
+					]
 		},
-		{	"next":[{
-
-						}]
-		},
-	],
 	
-	"abaut":[
-		{}
-	],
+	"about":
+		{"text":"Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla."}
+	,
 	"skills":[
-		{}
-	],
-	"proyects":[
-		{}
-	],
+						{"type":"Electronics","list":["FPGA","MCU","C++","PLC","siemmes","scheneider","Mitsubishi"]},
+						{"type":"CAD","list":["KiCad","FreeCad"]},
+						{"type":"WEB","list":["Laravel","CakePhP","SlimPhP","MySQL","js","TS","JQuery","Docker"]}
+		],
+	"contact":{
+						"email":"cba.allende@gmail.com",
+						"locate":"Ayacucho, Bs As.",
+						"phone":"(+59) 2494-15-543931"
+						},
+	"socials":[
+						 {"title":"github","icon":"fa-brands fa-github","link":""},
+						 {"title":"hackaday","icon":"fa-solid fa-skull-crossbones","link":"https://hackaday.io/projects/hacker/466225"},
+						 {"title":"linkedin","icon":"fa-brands fa-linkedin","link":""},
+						 {"title":"slack","icon":"fa-brands fa-slack","link":""},
+						 {"title":"discord","icon":"fa-brands fa-discord","link":""},
+						 {"title":"pinterest","icon":"fa-brands fa-pinterest","link":""},
+						 {"title":"facebook","icon":"fa-brands fa-facebook","link":""}
+						],					
+	"partners":[
+							{"name":"InnovarGroup-MDP","type":"collaboration","link":"https://www.innovar-groupmdq.com.ar","img":"igm.png","description":""},
+							{"name":"EmbedSA","type":"partner","link":"","img":"embedsa.jpg","description":""},
+							{"name":"EgoSytem","type":"partner","link":"","img":"","description":""}
+		],
+	"posts":[
+					{"name":"Conforming Window FFT","type":"blog","link":"","img":"","description":""},
+					{"name":"Electronic Gas-Mixer Improver","type":"paper","link":"","img":"","description":""}
+		]
 }
+
+
