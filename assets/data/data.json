@@ -24,7 +24,7 @@
 				 	"id": 3,
 				 		"type":1,
 				    "title": "Dispensador Gel",
-				    "description": "Dispensador gel automatico combinado con temperatura. Arduino",
+				    "description": "Dispensador gel automatico combinado con temperatura. Arduino.",
 				    "img":"dispenser.jpg"
 				 },
 				 {
@@ -164,11 +164,17 @@
 						    "description": "App for farm agro services",
 						    "img":"Farming-as-a-Service.jpg"
 						 },{
-							 	"id": 103,
+							 	"id": 104,
 				 					"type":4,
 						    "title": "Turbo generator",
-						    "description": "Generator to feed electrolisis cell. Exergy reductor system",
+						    "description": "Generator to feed electrolysis cell. <strong>Exergy</strong> reductor system.",
 						    "img":"turbocompresor.jpg"
+						 },{
+							 	"id": 105,
+				 					"type":1,
+						    "title": "Driver for electrolysis cell",
+						    "description": "Nonlinear controller for a strong filter plant.",
+						    "img":"images.png"
 						 }
 					]
 		},
