@@ -31,4 +31,4 @@ This is a summary for last 5 years of work.
 
 #### Template View
 
-[Preview](https://github.com/cballende/portfolio.io)
+[Preview](https://cballende.github.io/portfolio.github.io/)
