@@ -4,7 +4,7 @@ This is a summary for last 5 years of work.
 
 #### Caracteristicas
 
-* The schema has 4 sections:
+* The schema has 9 sections:
 
 - A: NAV.
 - B: SIDE SECTION.
